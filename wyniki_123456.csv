@@ -1,0 +1,2 @@
+imie,nazwisko,indeks,eda_num_rows,eda_num_attributes,eda_total_missing,eda_num_rows_with_missing,eda_num_column_with_missing,eda_num_classes,cls_knn_k1_accuracy,cls_knn_k5_accuracy,cls_knn_k9_accuracy,cls_knn_k11_accuracy,cls_knn_best_k,cls_knn_best_accuracy,clu_kmeans_mean_dist_k2,clu_kmeans_mean_dist_k3,clu_kmeans_mean_dist_k4,clu_kmeans_mean_dist_k5
+IMIĘ,NAZWISKO,123456,450,6,0,0,0,3,0.9925925925925926,1.0,1.0,1.0,5,1.0,1.6529954407025673,1.3523231706458465,1.2623890276963439,1.2153453898870907

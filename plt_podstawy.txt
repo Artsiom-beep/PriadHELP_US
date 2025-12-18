@@ -1,0 +1,62 @@
+MATPLOTLIB.PYPLOT (plt) — PODSTAWY
+
+1. Czym jest plt
+plt to interfejs do biblioteki matplotlib.
+Służy do rysowania wykresów w Pythonie.
+Działa stanowo: operuje na aktualnej figurze i osiach.
+
+2. Podstawowy schemat pracy
+- import biblioteki
+- rysowanie danych
+- opis osi / tytuł
+- wyświetlenie wykresu
+
+3. Import
+import matplotlib.pyplot as plt
+
+4. Najczęstsze typy wykresów
+plt.plot(x, y)        — wykres liniowy
+plt.scatter(x, y)     — wykres punktowy
+plt.bar(x, y)         — wykres słupkowy pionowy
+plt.barh(x, y)        — wykres słupkowy poziomy
+plt.hist(x)           — histogram
+
+5. Opis osi i tytuł
+plt.xlabel("Opis osi X")
+plt.ylabel("Opis osi Y")
+plt.title("Tytuł wykresu")
+
+6. Zakres osi
+plt.xlim(min, max)
+plt.ylim(min, max)
+
+7. Legenda i siatka
+plt.legend()
+plt.grid()
+
+8. Układ wykresu
+plt.tight_layout()    — automatyczne dopasowanie marginesów
+
+9. Wyświetlenie wykresu
+plt.show()            — renderuje wykres na ekranie
+
+10. Zarządzanie figurą
+plt.figure()          — nowa figura
+plt.clf()             — wyczyszczenie bieżącej figury
+plt.close()           — zamknięcie figury
+
+11. Subplot (wiele wykresów)
+plt.subplot(r, c, i)  — siatka r×c, i-ty wykres
+
+12. Styl obiektowy (zalecany)
+fig, ax = plt.subplots()
+ax.plot(x, y)
+ax.set_xlabel("X")
+ax.set_ylabel("Y")
+
+13. Relacja z pandas
+df.plot() korzysta wewnętrznie z matplotlib (plt)
+
+14. Kluczowa zasada
+plt modyfikuje stan bieżącego wykresu.
+Wszystko trafia do aktualnej figury aż do plt.show().
